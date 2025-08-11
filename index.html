@@ -4,5 +4,31 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Добро пожаловать на путеводитель в мир кулинарии</title>
+        <link rel="stylesheet" href="css/style.css" />
     </head>
+    <body>
+        <header class="header">
+            <h1 class="header__title">Блюда со всего мира</h1>
+        </header>
+
+        <nav class="menu">
+            <ul class="menu__list" id="nationalities">
+                <li class="menu__item menu_item_active" data-group="europe">Европа</li>
+                <li class="menu__item" data-group="asia">Азия</li>
+                <li class="menu__list" data-group="america">Америка</li>
+            </ul>
+        </nav>
+
+        <main class="dishes">
+            <section class="dishes__list" id="dishes__list">
+                <!--Блюда будут динамически добавляться сюда-->>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__text"> 2025 все права защищены</p>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
 </html>
