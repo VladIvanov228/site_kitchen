@@ -1,0 +1,132 @@
+$color-primary: #2c3e50;
+$color-accent: #e67e22;
+$color-light: #ecf0f1;
+$color-text: #333;
+
+$font-family: 'Times New Roman', Times, serif;
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: $font-family;
+    background-color: $color-light;
+    color: $color-text;
+    line-height: 1.5;
+}
+
+.header, .headerAsia, .headerEurope, .headerAmerica {
+    background-color: $color-primary;
+    color: $color-light;
+    padding: 20 px 0;
+    text-align: center;
+
+    &__title {
+       margin: 0;
+       font-size: 2.2rem; 
+    }
+}
+
+.menu{
+    background-color: antiquewhite;
+    border-bottom: 1px solid #ccc;
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item{
+        margin: 0 15px;
+        padding: 10 px 0;
+
+        a {
+            text-decoration: dashed;
+            color: $color-primary;
+            font-weight: 600;
+            transition: color 0.3s;
+
+            &:hover,
+            &:focus{
+                color: $color-accent;
+            }
+        }
+    }
+}
+
+.menu__item_active a{
+    color: $color-accent;
+    border-bottom: 2px solid $color-accent;
+    padding-bottom: 4px;
+}
+
+.menuAsia, .menuEurope, .menuAmerica {
+    background-color: #5a798a;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+    &__list{
+        list-style: decimal;
+        margin: 0;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    &__item{
+        flex: 0 0 48%;
+        margin: 10px 0;
+
+        a{
+            display: block;
+            padding: 12px 15px;
+            background-color: azure;
+            border-radius: 6px;
+            text-align: center;
+            color: $color-primary;
+            font-weight: 600;
+            text-decoration: navajowhite;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+
+            &:hover,
+            &:focus{
+                background-color: $color-accent;
+                color: white;
+                box-shadow: 0 4px 12px rgba(230,126,34,0.6);
+            }
+        }
+    }
+
+}
+
+.footer {
+    background-color: $color-primary;
+    color: $color-light;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    margin-top: 40px;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 600px) {
+    .menu__list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu__item {
+      margin: 8px 0;
+    }
+    .menuAsia__item, .menuEurope__item, .menuAmerica__item {
+      flex-basis: 100%;
+    }
+  
+
+  }
