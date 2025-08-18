@@ -6,6 +6,7 @@
         <title>Добро пожаловать на путеводитель в мир кулинарии</title>
         <link rel="stylesheet" href="css/style.css" />
     </head>
+    <script src="js/script.js"></script>
     <body>
         <header class="header">
             <h1 class="header__title">Блюда со всего мира</h1>
@@ -15,7 +16,7 @@
             <ul class="menu__list" id="nationalities">
                 <li class="menu__item"> <a href="europe/europe.html" >Европа</a></li>
                 <li class="menu__item"> <a href="asia/asia.html">Азия</a></li>
-                <li class="menu__list"> <a href="america/america.html">Америка</a></li>
+                <li class="menu__item"> <a href="america/america.html">Америка</a></li>
             </ul>
         </nav>
 
@@ -23,8 +24,12 @@
             <p class="main-content__text">
                 Выберите регион кухни с которой хотели бы ознакомиться
             </p>
-        </main>
+            <button id="alertButton">Нажми меня</button>
 
+            <button id="themeToggle">Переключить тему</button>
+            
+        </main>
+        
         <footer class="footer">
             <p class="footer__text"> 2025 все права защищены</p>
         </footer>
