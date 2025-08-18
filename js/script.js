@@ -43,4 +43,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const p = document.querySelector('.main-content__text');
+  if (p) {
+    setInterval(() => {
+      p.style.color = p.style.color === 'orange' ? '#333' : 'orange';
+    }, 1200);
+  }
+});
+
   
